@@ -14,7 +14,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
-
+/**
+ * Client class simply connects to server
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class Client extends Network{
     private boolean isRun;
     private JLabel friendUserLabel;
@@ -29,7 +34,9 @@ public class Client extends Network{
 
     }
 
-
+    /**
+     * it takes measures to connect
+     */
     public void run() {
 
         int port = 8080;
@@ -85,7 +92,9 @@ public class Client extends Network{
     public void setFriendTitleLabel(JLabel friendTitleLabel) {
         this.friendTitleLabel = friendTitleLabel;
     }
-
+    /**
+     * it sets labels from a friends sharedPlaylist song which is being played and it sets friendUsers label also.
+     */
     private void labelSetter(){
         for(Song song: this.getSharingCenter().getFriendSharedPlaylist().getPlayListSongs()){
             if(song.isPlayingStatus()){

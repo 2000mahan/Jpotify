@@ -5,11 +5,21 @@ import GUI.Left.Artwork;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This part is the left part of the bottom panel of the main window.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class LeftPart extends JPanel {
     private JLabel songTitleArtist;
     private JLabel songAlbum;
     private final static Color COLOR = new Color(66, 66, 66);
 
+    /**
+     * This is the class's constructor.
+     * It had a grid bag layout.
+     */
     public LeftPart(){
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();

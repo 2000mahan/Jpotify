@@ -3,6 +3,7 @@ package Interface.LeftListeners;
 import GUI.CustomButton;
 import GUI.Left.FileOrDirectoryChooser;
 import Logic.Entity.Library.Library;
+import Logic.Save;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.UnsupportedTagException;
 
@@ -14,15 +15,32 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.nio.file.Files;
 
+/**
+ * This listener is used for adding songs to library.
+ * @author Aryan
+ * @version 1.0
+ */
 public class AddSongToLibraryListener implements ActionListener {
 
     private Library library;
+    private Save  librarySave;
 
-    public AddSongToLibraryListener(Library library){
+    /**
+     * Constructor.
+     * @param library
+     * @param librarySave
+     */
+    public AddSongToLibraryListener(Library library, Save librarySave){
 
         this.library = library;
+        this.librarySave = librarySave;
 
     }
+
+    /**
+     * Add song to library.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         FileOrDirectoryChooser fileOrDirectoryChooser = new FileOrDirectoryChooser();
@@ -67,5 +85,6 @@ public class AddSongToLibraryListener implements ActionListener {
             });
             frame.setVisible(true);
         }
+        librarySave.save(this.library);
     }
 }

@@ -5,7 +5,12 @@ import com.mpatric.mp3agic.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * MetadataExtractorMachine class simply extracts datas according to ID3V1 and ID3V2 standards
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class MetadataExtractorMachine {
     private String titleNameData;
     private String artistNameData;
@@ -15,7 +20,11 @@ public class MetadataExtractorMachine {
 
     }
 
-
+    /**
+     * extracting datas according to ID3V1 standard
+     * @param songFile is a File
+     * @return ArrayList<String>
+     */
     private ArrayList<String> findID3V1Metadata(File songFile) throws IOException {
         ArrayList<String> usefulDataHolder = new ArrayList<>();
 
@@ -58,7 +67,10 @@ public class MetadataExtractorMachine {
             return usefulDataHolder;
     }
 
-
+    /**
+     * extracting datas according to ID3V2 standard
+     * @param  songFile is a File and title of a song which is a string
+     */
     private void findArtwork(File songFile, String title) throws IOException, InvalidDataException, UnsupportedTagException {
         Mp3File mp3file = new Mp3File(songFile.getAbsolutePath());
         if (mp3file.hasId3v2Tag()) {
@@ -73,7 +85,10 @@ public class MetadataExtractorMachine {
             }
         }
     }
-
+    /**
+     * starts the engine of the machine in which we call two methods for ID3V1 and ID3V2 standards
+     * @param  songFile is a File
+     */
     public void startTheEngine(File songFile) throws IOException, InvalidDataException, UnsupportedTagException {
      ArrayList<String> myUsefulDataHolder;
         myUsefulDataHolder = this.findID3V1Metadata(songFile);

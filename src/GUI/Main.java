@@ -13,7 +13,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-
+/**
+ * This is the main class for running the program.
+ * @author Aryan
+ * @version 1.0
+ */
 public class Main{
     public static void main(String[] args) throws IOException, JavaLayerException, InvalidDataException, UnsupportedTagException {
         User user = new User("mahan");

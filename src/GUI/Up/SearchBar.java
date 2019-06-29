@@ -5,9 +5,18 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/**
+ * This is the search bar panel.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class SearchBar extends JPanel{
     private JTextField searchBar;
 
+    /**
+     * Constructor.
+     */
     public SearchBar(){
         searchBar = new JTextField("Search...", 10);
         searchBar.setForeground(Color.GRAY);

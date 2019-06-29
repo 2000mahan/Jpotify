@@ -18,6 +18,11 @@ import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
+/**
+ * This listener show the songs to play.
+ * @author Aryan
+ * @version 1.0
+ */
 public class SongsListener implements ActionListener {
     private Library library;
     private JPanel center;
@@ -25,6 +30,13 @@ public class SongsListener implements ActionListener {
     private JPanel left;
     private JButton[] songs;
 
+    /**
+     * Constructor.
+     * @param library
+     * @param center
+     * @param down
+     * @param left
+     */
     public SongsListener(Library library, Center center, Down down, Left left){
         this.library = library;
         this.center = center;
@@ -32,6 +44,10 @@ public class SongsListener implements ActionListener {
         this.left = left;
     }
 
+    /**
+     * Shows the songs to play.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         if(library != null)

@@ -16,6 +16,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 
+/**
+ * This listener makes the songs the ability for playing.
+ * @author Aryan
+ * @version 1.0
+ */
 public class StartToPlayListener implements ActionListener {
 
    private Audio audio;
@@ -24,6 +29,14 @@ public class StartToPlayListener implements ActionListener {
    private Left left;
    private Library library;
 
+    /**
+     * Constructor.
+     * @param audio
+     * @param down
+     * @param song
+     * @param left
+     * @param library
+     */
    public StartToPlayListener(Audio audio, Down down, Song song, Left left, Library library){
        this.audio = audio;
        this.down = down;
@@ -31,6 +44,11 @@ public class StartToPlayListener implements ActionListener {
        this.left = left;
        this.library = library;
    }
+
+    /**
+     * Do actions when song button clicked.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         Thread startPlaying = new Thread(this.audio);

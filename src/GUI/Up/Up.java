@@ -7,12 +7,21 @@ import GUI.CustomScrollBar;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This panel contains all of the up components.
+ * @author Aryan
+ * @version 1.0
+ */
 public class Up extends JPanel{
     private LeftButtons leftButtons;
     private SearchBar searchBar;
     private Users users;
     private JPanel panel;
 
+    /**
+     * The constructor gets the center panel.
+     * @param center
+     */
     public Up(Center center){
         leftButtons = new LeftButtons();
         searchBar = new SearchBar();

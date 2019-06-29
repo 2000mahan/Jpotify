@@ -4,7 +4,17 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.plaf.basic.*;
 
+/**
+ * This class provides custom scroll bar for better UI.
+ * @author Aryan
+ * @version 1.0
+ */
 public class CustomScrollBar {
+    /**
+     * This method gets component as parameter.
+     * @param cmp
+     * @return JScrollPane
+     */
     public JScrollPane makeUI(Component cmp) {
         cmp.setForeground(Color.WHITE);
         JScrollPane scrollPane = new JScrollPane(
@@ -15,6 +25,10 @@ public class CustomScrollBar {
         scrollPane.getVerticalScrollBar().setOpaque(false);
 
         scrollPane.setLayout(new ScrollPaneLayout() {
+            /**
+             * provides the lay out of the scroll panel.
+             * @param parent
+             */
             @Override
             public void layoutContainer(Container parent) {
                 JScrollPane scrollPane = (JScrollPane)parent;
@@ -91,6 +105,12 @@ public class CustomScrollBar {
         });
         return scrollPane;
     }
+
+    /**
+     * this method makes a scroll panel.
+     * @param component
+     * @return JScrollPane
+     */
     public static JScrollPane createScrollPanel(Component component) {
         JScrollPane cmp;
         cmp = new CustomScrollBar().makeUI(component);

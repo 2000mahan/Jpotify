@@ -8,11 +8,25 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.FileNotFoundException;
 
+/**
+ * This panel contains all of the left part components.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class Left extends JPanel {
   private Icons icons;
   private PlayLists playLists;
   private Artwork artwork;
 
+  /**
+   * Constructor of the class.
+   * This panel has a grid bag layout.
+   * @param center
+   * @param down
+   * @throws FileNotFoundException
+   * @throws JavaLayerException
+   */
   public Left(Center center, Down down) throws FileNotFoundException, JavaLayerException {
     super();
     this.setLayout(new GridBagLayout());

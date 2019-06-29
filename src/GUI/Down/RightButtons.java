@@ -12,11 +12,21 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * This panel includes the sound progress bar and the lyrics button.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class RightButtons extends JPanel{
     private JButton lyricsButton;
     private JLabel soundLabel;
     private JProgressBar sound;
 
+    /**
+     * Constructor without parameters.
+     * We used emoji's instead of images for the buttons.
+     */
     public RightButtons(){
         super();
         setLayout(new FlowLayout());

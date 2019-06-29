@@ -5,11 +5,22 @@ import GUI.CustomProgressBar;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This class is the bottom part of the main window's lowest part.
+ * It has a progress bar to indicate the duration of the playing song.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class PlayBar extends JPanel {
     private JLabel pastTime;
     private JLabel remainingTime;
     private CustomProgressBar progress;
 
+    /**
+     * The class's constructor.
+     * With a flow layout.
+     */
     public PlayBar(){
         super();
         setLayout(new FlowLayout());

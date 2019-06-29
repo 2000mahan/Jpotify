@@ -14,6 +14,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 
+/**
+ * This class provides the ability for moving backward between the songs.
+ * @author Aryan
+ * @version 1.0
+ */
 public class PreviousSongListener implements ActionListener {
 
     private Library library;
@@ -22,6 +27,14 @@ public class PreviousSongListener implements ActionListener {
     private Song song;
     private Audio audio;
 
+    /**
+     * Constructor.
+     * @param library
+     * @param song
+     * @param left
+     * @param down
+     * @param audio
+     */
     public PreviousSongListener(Library library, Song song, Left left, Down down, Audio audio){
         this.audio = audio;
         this.down = down;
@@ -29,6 +42,11 @@ public class PreviousSongListener implements ActionListener {
         this.library = library;
         this.song = song;
     }
+
+    /**
+     * Do some actions when clicked.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         Song songToPlay;

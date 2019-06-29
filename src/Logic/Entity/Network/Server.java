@@ -12,7 +12,12 @@ import javax.swing.*;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+/**
+ * Server class simply connects to server
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class Server extends Network{
 
     private boolean isRun;
@@ -31,7 +36,9 @@ public class Server extends Network{
 
     }
 
-
+    /**
+     * it takes measures to connect
+     */
     public void run() {
         while (isRun){
 

@@ -11,14 +11,29 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+/**
+ * This listener shows the albums in the center panel.
+ * @author Aryan
+ * @version 1.0
+ */
 public class ShowAlbumsListener implements ActionListener {
     private Library library;
     private Center center;
 
+    /**
+     * Constructor.
+     * @param center
+     * @param library
+     */
     public ShowAlbumsListener(Center center, Library library){
         this.center = center;
         this.library = library;
     }
+
+    /**
+     * Do some actions when clicked.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         center.removeAll();

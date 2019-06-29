@@ -6,19 +6,30 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
 
-
+/**
+ * This class develops custom button for better UI.
+ * @author Aryan
+ * @version 1.0
+ */
 public class CustomButton extends JButton {
 
     private Color focusColor = Color.GRAY;
 
+    /**
+     * Gets the text of the button.
+     * @param text
+     */
     public CustomButton(String text) {
         super(text);
         setBackground(Color.BLACK);
         setForeground(Color.WHITE);
         setBorderPainted(false);
-        setContentAreaFilled(false);
+        setContentAreaFilled(false); //Background changed.
         setFocusPainted(false);
         setOpaque(false);
+        /*
+        mouse listener for better UI.
+         */
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {

@@ -13,6 +13,11 @@ import java.awt.*;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Right panel of the main window.
+ * @author Aryan
+ * @version 1.0
+ */
 
 public class Right extends JPanel{
     private JLabel title;
@@ -20,6 +25,12 @@ public class Right extends JPanel{
     private User user;
     private String status;
 
+    /**
+     * Panel's constructor.
+     * @throws InvalidDataException
+     * @throws IOException
+     * @throws UnsupportedTagException
+     */
     public Right() throws InvalidDataException, IOException, UnsupportedTagException {
         super();
         this.user = new User("mahan");
@@ -32,8 +43,6 @@ public class Right extends JPanel{
         area.setBackground(Color.black);
         area.setRows(5);
         this.add(new CustomScrollBar().createScrollPanel(area));
-
-
     }
 
 }

@@ -1,7 +1,12 @@
 package Logic.Entity.Song;
 
 import java.io.*;
-
+/**
+ * Song class simply keeps datas of a mp3 file
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class Song implements Serializable{
     private String title;
     private String artistName;

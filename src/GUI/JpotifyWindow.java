@@ -13,9 +13,23 @@ import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+/**
+ * This class is the main window class.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class JpotifyWindow extends JFrame {
     private static final Dimension DIMENSION = Toolkit.getDefaultToolkit().getScreenSize();
 
+    /**
+     * Constructor.
+     * @param button
+     * @throws IOException
+     * @throws JavaLayerException
+     * @throws InvalidDataException
+     * @throws UnsupportedTagException
+     */
     public JpotifyWindow(JButton button) throws IOException, JavaLayerException, InvalidDataException, UnsupportedTagException {
         super("Jpotify");
         Center center = new Center();

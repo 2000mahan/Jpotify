@@ -1,5 +1,10 @@
 package Logic.Entity.Library.QualifiedMember;
-
+/**
+ * QualifiedMember class simply works with the MetadataExtractorMachine
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 import Logic.Entity.Library.LibraryMemberQualifications.SongAdder;
 import Logic.Entity.Library.LibraryMemberQualifications.SongCreator;
 import Logic.Entity.Library.LibraryMemberQualifications.SongRemover;
@@ -22,13 +27,20 @@ public class QualifiedMember implements SongAdder, SongCreator, SongRemover{
         Member = "Qualified Member Of Library";
     }
 
-
+    /**
+     * adds song to library
+     * @param songs from library and Song song
+     */
     @Override
     public void addSong(ArrayList<Song> songs, Song song) {
 
      songs.add(song);
     }
-
+    /**
+     * creats song
+     * @param songFile is a File
+     * @return returns a song
+     */
     @Override
     public Song songCreator(File songFile) throws IOException, InvalidDataException, UnsupportedTagException, UnsupportedAudioFileException {
      MyDataExtractor.startTheEngine(songFile);
@@ -36,7 +48,10 @@ public class QualifiedMember implements SongAdder, SongCreator, SongRemover{
      return song;
 
     }
-
+    /**
+     * removes song from library
+     * @param songs and  index of the song in the arraylist of songs
+     */
     @Override
     public void removeSong(ArrayList<Song> songs, int index) {
         songs.remove(index);

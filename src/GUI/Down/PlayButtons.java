@@ -12,6 +12,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * This is the panel of buttons used for playing songs.
+ * @author Aryan
+ * @version 1.0
+ */
 public class PlayButtons extends JPanel{
     private JButton shuffleButton;
     private JButton previousButton;
@@ -21,6 +26,10 @@ public class PlayButtons extends JPanel{
     private JButton likeButton;
     private final static Color COLOR = new Color(66, 66, 66);
 
+    /**
+     * We have used emoji's instead of image's for the icons.
+     * Constructor without parameters.
+     */
     public PlayButtons(){
         super();
         setLayout(new FlowLayout());

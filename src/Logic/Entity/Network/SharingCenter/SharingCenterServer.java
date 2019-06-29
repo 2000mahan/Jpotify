@@ -8,7 +8,12 @@ import java.io.*;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.Scanner;
-
+/**
+ * a center for sharing datas between client and server
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class SharingCenterServer {
     private User user;
     private SharedPlayList mySharedPlayList;
@@ -37,7 +42,9 @@ public class SharingCenterServer {
         return mySharedPlayList;
     }
 
-
+    /**
+     * as being called it sends and recieves datas by calling some other methods
+     */
     public void run() {
         int sendAndDownload = 0;
         while (sendAndDownload < 2) {
@@ -89,7 +96,9 @@ public class SharingCenterServer {
 
 
 
-
+    /**
+     * it downloads datas which is a sharedPlaylist
+     */
     private void downloadData() throws IOException, ClassNotFoundException {
         ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
         SharedPlayList JohnDoesSharedPlaylist = (SharedPlayList)input.readObject();
@@ -98,25 +107,35 @@ public class SharingCenterServer {
         this.dataExtractor();
 
     }
-
+    /**
+     * it sends datas which is a sharedPlaylist
+     */
     private void sendData() throws IOException {
 
         ObjectOutputStream out = new ObjectOutputStream((socket.getOutputStream()));
         out.writeObject(this.mySharedPlayList);
         out.flush();
     }
+    /**
+     * it sends users information
+     */
     private void sendUser() throws IOException {
         ObjectOutputStream out = new ObjectOutputStream((socket.getOutputStream()));
         out.writeObject(this.user);
         out.flush();
     }
+    /**
+     * it downloads friends user information
+     */
     private void downloadFriendUser() throws IOException, ClassNotFoundException {
         ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
         User friendUser = (User)input.readObject();
         this.friendUser = friendUser;
 
     }
-
+    /**
+     * it extracts datas being downloaded which is a sharedPlaylist
+     */
     private void dataExtractor() {
         for(Song song:this.friendSharedPlaylist.getPlayListSongs()){
             int myMp3FileSize = (int)song.getSongFile().length();

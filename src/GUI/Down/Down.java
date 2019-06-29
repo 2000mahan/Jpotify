@@ -5,6 +5,12 @@ import GUI.Center.Center;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This class is the bottom part of the main window.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class Down extends JPanel {
     private LeftPart leftPart;
     private PlayBar playBar;
@@ -12,6 +18,10 @@ public class Down extends JPanel {
     private RightButtons rightButtons;
     private JPanel center;
 
+    /**
+     * Down constructor.
+     * And also it has a border layout.
+     */
     public Down(){
         super();
         setLayout(new BorderLayout());

@@ -11,7 +11,12 @@ import com.mpatric.mp3agic.UnsupportedTagException;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
+/**
+ * Network class simply keeps IPAddress and sharedPlaylist
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class Network {
     private ArrayList<String> IPAddress;
     private PlayList sharedPlaylist;
@@ -44,6 +49,10 @@ public class Network {
         this.IPAddress.remove(IPAddressIterator(IPAddress));
 
     }
+    /**
+     * iterates through IPAddresses to find one that user is looking for
+     * @param IPAddress which is a string users option
+     */
     private int IPAddressIterator(String IPAddress){
         for(String certainIPAddress:this.IPAddress){
             if(certainIPAddress.equals(IPAddress))

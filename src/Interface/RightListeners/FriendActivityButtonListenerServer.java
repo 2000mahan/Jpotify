@@ -14,11 +14,24 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+/**
+ * This listener shows the activities of the friend.
+ * @author Mahan
+ * @version 1.0
+ */
 public class FriendActivityButtonListenerServer implements ActionListener {
     private Server server;
     private FriendActivityPanelServer friendActivityPanelServer;
     private User user;
     private JpotifyWindow window;
+
+    /**
+     * Constructor.
+     * @param user
+     * @param window
+     * @throws InvalidDataException
+     * @throws UnsupportedTagException
+     */
     public FriendActivityButtonListenerServer(User user, JpotifyWindow window ) throws InvalidDataException, UnsupportedTagException {
         this.user = user;
         try {
@@ -33,6 +46,10 @@ public class FriendActivityButtonListenerServer implements ActionListener {
 
     }
 
+    /**
+     * Shows the friend activities.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         try {

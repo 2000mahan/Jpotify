@@ -4,7 +4,12 @@ import Logic.Entity.Song.Song;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-
+/**
+ * PlayList class simply keeps users favorite songs
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class PlayList implements Serializable {
     private String playListName;
     private ArrayList<Song> playListSongs;

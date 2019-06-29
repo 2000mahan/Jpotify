@@ -5,10 +5,21 @@ import GUI.CustomScrollBar;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This panel is used for showing play lists.
+ * @author Aryan
+ * @version 1.0
+ */
+
 public class PlayLists extends JPanel{
     private JTextArea area;
     private JLabel playlistLabel;
 
+    /**
+     * Constructor.
+     * Panel has grid bag layout.
+     * We have used custom scroll bar in this component.
+     */
     public PlayLists(){
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();

@@ -10,7 +10,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
-
+/**
+ * Library class simply keeps address of mp3 files
+ * @author Mahan
+ * @version 7.0
+ * @since 06/15/2019
+ */
 public class Library implements Serializable {
     private ArrayList<File> songFile;
     private ArrayList<Song> songs;
@@ -21,7 +26,10 @@ public class Library implements Serializable {
          this.songs = new ArrayList<Song>();
 
     }
-
+    /**
+     * simply adds a song to library
+     * @param path which is the address of a mp3 file
+     */
     public void addSongToLibrary(String path) throws IOException, InvalidDataException, UnsupportedTagException, UnsupportedAudioFileException {
         Song songToAdd = libraryMember.songCreator(new File(path));
         for(Song song : songs)

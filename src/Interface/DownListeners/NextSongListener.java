@@ -14,6 +14,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 
+/**
+ * This listener provides the ability for moving forward.
+ * @author Aryan
+ * @version 1.0
+ */
 public class NextSongListener implements ActionListener {
 
     private Library library;
@@ -22,6 +27,14 @@ public class NextSongListener implements ActionListener {
     private Song song;
     private Audio audio;
 
+    /**
+     * Constructor.
+     * @param library
+     * @param song
+     * @param left
+     * @param down
+     * @param audio
+     */
     public NextSongListener(Library library, Song song, Left left, Down down, Audio audio){
         this.audio = audio;
         this.down = down;
@@ -29,6 +42,11 @@ public class NextSongListener implements ActionListener {
         this.library = library;
         this.song = song;
     }
+
+    /**
+     * Do some actions when next button clicked.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         Song songToPlay;
@@ -40,7 +58,7 @@ public class NextSongListener implements ActionListener {
         }
         System.out.println(i);
         if(++i < library.getSongs().size()){
-            this.audio.kill();
+            this.audio.kill(); //stop the current thread.
             songToPlay = library.getSongs().get(i);
             Audio audio = null;
             try {

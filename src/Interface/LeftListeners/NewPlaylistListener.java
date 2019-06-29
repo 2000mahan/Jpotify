@@ -7,6 +7,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
+/**
+ * Makes a playlist when clicked.
+ * @author Aryan
+ * @version 1.0
+ */
 public class NewPlaylistListener implements ActionListener {
 
     private Library library;
@@ -19,6 +24,11 @@ public class NewPlaylistListener implements ActionListener {
 
 
     }
+
+    /**
+     * Makes a play list.
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
 
