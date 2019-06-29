@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6b8e4e7-b360-489f-8007-f0fab9dbf6b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interface/DownListeners/NextSongListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface/DownListeners/PreviousSongListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface/LeftListeners/ShowAlbumsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/Entity/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Center/Center.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Center/Center.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Center/CenterPlaylist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Center/CenterSongs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/Down.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/Down.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/LeftPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/LeftPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/PlayButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/RightButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Down/RightButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/JpotifyWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/JpotifyWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/Artwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/Artwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/FileOrDirectoryChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/FileOrDirectoryChooser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/Icons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/Icons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/Left.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Left/Left.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Right/Right.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Right/Right.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/GUI/Up/Up.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/GUI/Up/Up.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Interface/Center/StartToPlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Interface/Center/StartToPlayListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Interface/DownListeners/PlayAndPauseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Interface/DownListeners/PlayAndPauseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Interface/LeftListeners/AddSongToLibraryListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Interface/LeftListeners/AddSongToLibraryListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Interface/LeftListeners/SongsListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Interface/LeftListeners/SongsListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Audio/Audio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Audio/Audio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/LibraryMemberQualifications/SongCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/LibraryMemberQualifications/SongCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/MetadataExtractorMachine/MetadataExtractorMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/MetadataExtractorMachine/MetadataExtractorMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/QualifiedMember/QualifiedMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Library/QualifiedMember/QualifiedMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Song/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jpotify/Logic/Entity/Song/Song.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Center/Center.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Center/Center.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Center/CenterPlaylist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Center/CenterSongs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Down/Down.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Down/Down.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Down/LeftPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Down/LeftPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Down/PlayBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Down/PlayBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Down/PlayButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Down/PlayButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Down/RightButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Down/RightButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/JpotifyWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/JpotifyWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Left/Artwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Left/Artwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Left/Icons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Left/Icons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Left/Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Left/Left.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Right/Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Right/Right.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Up/Up.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Up/Up.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Center/StartToPlayListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Center/StartToPlayListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/DownListeners/PlayAndPauseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/DownListeners/PlayAndPauseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/LeftListeners/AddSongToLibraryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/LeftListeners/AddSongToLibraryListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/LeftListeners/SongsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/LeftListeners/SongsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Audio/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Audio/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Entity/Library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Entity/Library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Entity/Library/LibraryMemberQualifications/SongCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Entity/Library/LibraryMemberQualifications/SongCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Entity/Library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Entity/Library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Entity/Library/QualifiedMember/QualifiedMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Entity/Library/QualifiedMember/QualifiedMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Entity/Song/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Entity/Song/Song.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2070813325">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="28" />
+          <entry key="java" value="18470" />
+          <entry key="txt" value="277" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="18470" />
+          <entry key="PLAIN_TEXT" value="305" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="330" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="330" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.merge" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Song/Song.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/DownListeners/NextSongListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Interface/DownListeners/PreviousSongListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Audio/Audio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-251">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/DownListeners/PlayAndPauseListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/LeftListeners/AddSongToLibraryListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/LeftListeners/ShowAlbumsListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/Center/StartToPlayListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/LeftListeners/SongsListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>label</find>
+      <find>font</find>
+      <find>setFONT</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>button</replace>
+      <replace>FONT</replace>
+      <replace>setFont</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/GUI/PlayBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/LeftBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/JpotifyWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Right/RightBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/RightIcons.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CustomColor.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/LeftBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CustomMouseListener.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CustomProgressBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Up/LeftButtons.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Up/Users.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CustomScrollBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Up/SearchBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/AddPlaylist.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/Title.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/PlayLists.java" />
+        <option value="$PROJECT_DIR$/src/Interface/PlayPauseListener.java" />
+        <option value="$PROJECT_DIR$/src/Interface/AddToLibraryListener.java" />
+        <option value="$PROJECT_DIR$/src/Interface/SongsListener.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Center/CenterPlaylist.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Entity/Library/MetadataExtractorMachine/MetadataExtractorMachine.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Center/CenterSongs.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Entity/Album.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Up/Up.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Center/Center.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/Down.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/PlayBar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/RightButtons.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/LeftPart.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/Left.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/Artwork.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Audio/Audio.java" />
+        <option value="$PROJECT_DIR$/src/Interface/Center/StartToPlayListener.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Sound.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Down/PlayButtons.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/Icons.java" />
+        <option value="$PROJECT_DIR$/src/GUI/JpotifyWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Right/Right.java" />
+        <option value="$PROJECT_DIR$/src/Interface/LeftListeners/ShowAlbumsListener.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Left/FileOrDirectoryChooser.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CustomButton.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Entity/Library/QualifiedMember/QualifiedMember.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Entity/Library/Library.java" />
+        <option value="$PROJECT_DIR$/src/Interface/LeftListeners/AddSongToLibraryListener.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Entity/Library/Main.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Entity/Song/Song.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/Interface/DownListeners/PlayAndPauseListener.java" />
+        <option value="$PROJECT_DIR$/src/Interface/LeftListeners/SongsListener.java" />
+        <option value="$PROJECT_DIR$/src/Interface/DownListeners/NextSongListener.java" />
+        <option value="$PROJECT_DIR$/src/Interface/DownListeners/PreviousSongListener.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1104" />
+    <option name="height" value="1884" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Down" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Left" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Right" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Up" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="DownListeners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="LeftListeners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="MetadataExtractorMachine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="QualifiedMember" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Song" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jpotify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jpotify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="UserInfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561793122153" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/MyChess" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CusButton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.CusButton" />
+      <module name="Jpotify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomButton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.CustomButton" />
+      <module name="Jpotify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Logic.Entity.Library.Main" />
+      <module name="Jpotify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Logic.Entity.Library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
+      <module name="Jpotify" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestButton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.TestButton" />
+      <module name="Jpotify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TestButton" />
+      <item itemvalue="Application.CusButton" />
+      <item itemvalue="Application.CustomButton" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.CustomButton" />
+        <item itemvalue="Application.TestButton" />
+        <item itemvalue="Application.CusButton" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6b8e4e7-b360-489f-8007-f0fab9dbf6b8" name="Default Changelist" comment="" />
+      <created>1560801730246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560801730246</updated>
+      <workItem from="1560801731557" duration="13000" />
+      <workItem from="1560807157459" duration="38000" />
+      <workItem from="1560833767379" duration="4475000" />
+      <workItem from="1560857608340" duration="54000" />
+      <workItem from="1560858629867" duration="628000" />
+      <workItem from="1560951743894" duration="594000" />
+      <workItem from="1560954357285" duration="157000" />
+      <workItem from="1561019858157" duration="3190000" />
+      <workItem from="1561042543948" duration="13700000" />
+      <workItem from="1561058704670" duration="1288000" />
+      <workItem from="1561115514242" duration="21557000" />
+      <workItem from="1561178967254" duration="10935000" />
+      <workItem from="1561245597586" duration="1897000" />
+      <workItem from="1561314905877" duration="8804000" />
+      <workItem from="1561372688740" duration="14322000" />
+      <workItem from="1561413553109" duration="5000" />
+      <workItem from="1561413581662" duration="368000" />
+      <workItem from="1561479696988" duration="3647000" />
+      <workItem from="1561501223490" duration="2371000" />
+      <workItem from="1561525041273" duration="1524000" />
+      <workItem from="1561711657245" duration="29032000" />
+      <workItem from="1561756676796" duration="3406000" />
+      <workItem from="1561788752162" duration="3028000" />
+    </task>
+    <task id="LOCAL-00001" summary="Better GUI and inheritance and packaging.">
+      <created>1561145765635</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561145765635</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Better GUI and inheritance and packaging.">
+      <created>1561145881552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561145881552</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Custom scrollbar completely developed &amp; left part is almost done.">
+      <created>1561150541618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561150541618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Left icons updated.">
+      <created>1561150663379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561150663379</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Custom buttons completely developed for batter UI.">
+      <created>1561246894063</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561246894063</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Custom progressbar developed. And also GUI is almost done.">
+      <created>1561402981677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561402981677</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Left icons updated.">
+      <created>1561481969725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561481969726</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Files updated.">
+      <created>1561528256536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561528256538</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Some bugs fixed.">
+      <created>1561671125935</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561671125935</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="152545000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22753036" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32562277" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32740214" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.022672065" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1611336" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32740214" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32740214" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Better GUI and inheritance and packaging." />
+    <MESSAGE value="Custom scrollbar completely developed &amp; left part is almost done." />
+    <MESSAGE value="Custom buttons completely developed for batter UI." />
+    <MESSAGE value="Custom progressbar developed. And also GUI is almost done." />
+    <MESSAGE value="Left icons updated." />
+    <MESSAGE value="Files updated." />
+    <MESSAGE value="Some bugs fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some bugs fixed." />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Interface/AddToLibraryListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/Interface/SongsListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/SearchBar.java" />
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/UserInfo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CustomColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/java/awt/GridLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="218" selection-start-line="218" selection-end-line="218" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="833" selection-start-line="833" selection-end-line="833" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javazoom/jl/player/advanced/AdvancedPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Center/CenterPlaylist.java" />
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/java/awt/BorderLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="430" selection-start-line="430" selection-end-line="430" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Center/CenterSongs.java" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/Up/SearchBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Up/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Down/Down.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Library/MetadataExtractorMachine/MetadataExtractorMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Down/LeftPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Down/PlayBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Center/Center.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Left/PlayLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Left/Left.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Left/Artwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Down/RightButtons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CustomScrollBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CustomProgressBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Sound.java" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/Down/PlayButtons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Up/LeftButtons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/JpotifyWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Up/Up.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Left/Icons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Left/FileOrDirectoryChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CustomButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/sound/sampled/AudioSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17221">
+          <caret line="1055" column="35" selection-start-line="1055" selection-start-column="35" selection-end-line="1055" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Library/QualifiedMember/QualifiedMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Library/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Right/Right.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Library/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Entity/Song/Song.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/DownListeners/PlayAndPauseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/LeftListeners/AddSongToLibraryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/LeftListeners/SongsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/LeftListeners/ShowAlbumsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Center/StartToPlayListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Audio/Audio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/DownListeners/NextSongListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/DownListeners/PreviousSongListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Jpotify</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
