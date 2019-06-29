@@ -8,9 +8,10 @@ import com.mpatric.mp3agic.UnsupportedTagException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Library {
+public class Library implements Serializable {
     private ArrayList<File> songFile;
     private ArrayList<Song> songs;
     private static QualifiedMember libraryMember = new QualifiedMember();
@@ -22,8 +23,11 @@ public class Library {
     }
 
     public void addSongToLibrary(String path) throws IOException, InvalidDataException, UnsupportedTagException, UnsupportedAudioFileException {
-
-        libraryMember.addSong(songs, libraryMember.songCreator(new File(path)));
+        Song songToAdd = libraryMember.songCreator(new File(path));
+        for(Song song : songs)
+            if(songToAdd.getTitle().equals(song.getTitle()))
+                return;
+        libraryMember.addSong(songs, songToAdd);
     }
 
     public ArrayList<File> getSongAddress() {

@@ -5,22 +5,25 @@ import GUI.Down.Down;
 import GUI.Left.Left;
 import GUI.Right.Right;
 import GUI.Up.Up;
+import com.mpatric.mp3agic.InvalidDataException;
+import com.mpatric.mp3agic.UnsupportedTagException;
 import javazoom.jl.decoder.JavaLayerException;
-
 import javax.swing.*;
 import java.awt.*;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class JpotifyWindow extends JFrame {
     private static final Dimension DIMENSION = Toolkit.getDefaultToolkit().getScreenSize();
 
-    public JpotifyWindow() throws FileNotFoundException, JavaLayerException {
+    public JpotifyWindow(JButton button) throws IOException, JavaLayerException, InvalidDataException, UnsupportedTagException {
         super("Jpotify");
         Center center = new Center();
         Down down = new Down();
         Right right = new Right();
         Left left = new Left(center, down);
         Up up = new Up(center);
+        up.add(button);
         setMinimumSize(new Dimension(1000,600));
         setMaximumSize(DIMENSION);
         setLocation(DIMENSION.width/2 - getSize().width/2, DIMENSION.height/2 - getSize().height/2);

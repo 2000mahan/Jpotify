@@ -1,29 +1,38 @@
 package GUI.Right;
 
-import GUI.Center.Center;
+import GUI.CustomButton;
 import GUI.CustomScrollBar;
+import Interface.RightListeners.FriendActivityButtonListenerClient;
+import Interface.RightListeners.FriendActivityButtonListenerServer;
+import Logic.Entity.UserInfo.User;
+import com.mpatric.mp3agic.InvalidDataException;
+import com.mpatric.mp3agic.UnsupportedTagException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Line2D;
+import java.io.IOException;
+import java.util.Scanner;
 
 
 public class Right extends JPanel{
     private JLabel title;
     private JList friendActivity;
+    private User user;
+    private String status;
 
-    public Right(){
+    public Right() throws InvalidDataException, IOException, UnsupportedTagException {
         super();
+        this.user = new User("mahan");
         this.setLayout(new BorderLayout());
-        JLabel label = new JLabel("Friend Activity");
-        Dimension dimension = this.getSize();
-        label.setFont(new Font("Serif", Font.PLAIN, 25));
-        label.setForeground(Color.WHITE);
-        this.add(label, BorderLayout.PAGE_START);
-        this.setBackground(Color.BLACK);
+        JButton button = new CustomButton("Friend Activity");
+        button.setFont(new Font("Serif", Font.PLAIN, 25));
+        this.add(button, BorderLayout.PAGE_START);
+        this.setBackground(Color.black);
         JTextArea area = new JTextArea();
         area.setBackground(Color.black);
+        area.setRows(5);
         this.add(new CustomScrollBar().createScrollPanel(area));
+
 
     }
 

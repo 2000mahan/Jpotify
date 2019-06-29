@@ -1,19 +1,23 @@
 package Logic.Entity.Network;
 
+import Logic.Entity.Library.Library;
 import Logic.Entity.PlayList.FixedPlayLists.SharedPlayList;
 import Logic.Entity.PlayList.PlayList;
+import Logic.Entity.Song.Song;
 import Logic.Entity.UserInfo.User;
+import com.mpatric.mp3agic.InvalidDataException;
+import com.mpatric.mp3agic.UnsupportedTagException;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Network {
-    private ArrayList<String> IPAddress = null;
+    private ArrayList<String> IPAddress;
     private PlayList sharedPlaylist;
     private User user;
 
-    public Network(User user){
-        this.IPAddress = new ArrayList<String>();
-        this.sharedPlaylist = new SharedPlayList();
+    public Network(User user) throws InvalidDataException, IOException, UnsupportedTagException {
         this.user = user;
     }
 
@@ -46,7 +50,6 @@ public class Network {
                return  this.IPAddress.indexOf(certainIPAddress);
         }
         return 0;
-
     }
 
     public void setUser(User user) {

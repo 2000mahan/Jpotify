@@ -2,7 +2,9 @@ package Logic.Entity.PlayList.FixedPlayLists;
 
 import Logic.Entity.PlayList.PlayList;
 
-public class SharedPlayList extends PlayList {
+import java.io.Serializable;
+
+public class SharedPlayList extends PlayList implements Serializable {
     public SharedPlayList(){
         this("SharedPlaylist");
     }

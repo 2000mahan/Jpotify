@@ -1,13 +1,6 @@
 package Logic.Entity.Song;
 
-import javazoom.jl.decoder.Bitstream;
-import javazoom.jl.decoder.Header;
-
-import javax.sound.sampled.*;
 import java.io.*;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Song implements Serializable{
     private String title;
@@ -15,14 +8,21 @@ public class Song implements Serializable{
     private String albumName;
     private File songFile;
     private byte[] buffer; //buffer keeps our vital data which is the mp3 bytes itself.
+    private boolean playingStatus;
+    private boolean inSharedPlaylist;
 
-    public Song(String title, String artistName, String albumName, File songFile) throws IOException, UnsupportedAudioFileException {
+    public Song(String title, String artistName, String albumName, File songFile){
 
-        this.title = title;
-        this.artistName = artistName;
-        this.albumName = albumName;
-        this.songFile = songFile;
-        this.buffer = new byte[(int) this.songFile.length()];
+    this.title = title;
+    this.artistName = artistName;
+    this.albumName = albumName;
+    this.songFile = songFile;
+    this.buffer = new byte[(int) this.songFile.length()];
+        try {
+            this.setBuffer();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setTitle(String title) {
@@ -70,7 +70,15 @@ public class Song implements Serializable{
 
     @Override
     public String toString(){
-        return title + artistName + albumName;
+        return title + " " + artistName + " " + albumName;
     }
 
+    public boolean isPlayingStatus() {
+        return playingStatus;
+    }
+
+
+    public void setPlayingStatus(boolean playingStatus) {
+        this.playingStatus = playingStatus;
+    }
 }
