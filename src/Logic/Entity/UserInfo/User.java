@@ -1,6 +1,10 @@
 package Logic.Entity.UserInfo;
 
+import Logic.Entity.PlayList.PlayList;
+
 import java.io.Serializable;
+import java.util.ArrayList;
+
 /**
  * User class simply keeps datas a user
  * @author Mahan
@@ -10,9 +14,11 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     private String userName;
+    private ArrayList<PlayList> playLists;
 
     public User(String userName){
       this.userName = userName;
+      playLists = new ArrayList<>();
     }
 
     public void setUserName(String userName) {

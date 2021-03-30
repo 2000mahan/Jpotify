@@ -36,9 +36,7 @@ public class Save {
             ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File("library")));
             library = (Library) in.readObject();
         } catch (IOException e) {
-            e.printStackTrace();
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
         return library;
     }

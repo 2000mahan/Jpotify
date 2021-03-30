@@ -90,6 +90,7 @@ public class ShowAlbumsListener implements ActionListener {
                 pane.add(panels[i], gbc);
             }
         }
+        pane.setBackground(new Color(169, 169, 169));
         center.add(pane);
         center.revalidate();
         center.repaint();

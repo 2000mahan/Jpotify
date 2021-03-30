@@ -4,6 +4,7 @@ import GUI.Center.Center;
 import GUI.CustomButton;
 import GUI.Down.Down;
 import Interface.LeftListeners.AddSongToLibraryListener;
+import Interface.LeftListeners.NewPlaylistListener;
 import Interface.LeftListeners.ShowAlbumsListener;
 import Interface.LeftListeners.SongsListener;
 import Logic.Entity.Library.Library;
@@ -26,6 +27,7 @@ public class Icons extends JPanel {
     private JButton library;
     private JButton addPlaylist;
     private Save  librarySave;
+    private Library lib;
     private static final Font FONT = new Font("Serif", Font.PLAIN, 15);
 
     /**
@@ -36,11 +38,11 @@ public class Icons extends JPanel {
      * @throws FileNotFoundException
      * @throws JavaLayerException
      */
-    public Icons(Center center, Down down, Left left) throws FileNotFoundException, JavaLayerException {
+    public Icons(Center center, Down down, Left left, Library lib) throws FileNotFoundException, JavaLayerException {
         library = new CustomButton("\u2795" + " Library");
         library.setFont(FONT);
         librarySave = new Save();
-        Library lib;
+        this.lib = lib;
         if(this.librarySave.load() != null)
             lib = this.librarySave.load();
         else
@@ -56,6 +58,7 @@ public class Icons extends JPanel {
         songs.addActionListener(new SongsListener(lib, center, down, left));
         addPlaylist = new CustomButton("\u2795" + " Playlist");
         addPlaylist.setFont(FONT);
+        addPlaylist.addActionListener(new NewPlaylistListener(lib, center, left));
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.weightx = 1;

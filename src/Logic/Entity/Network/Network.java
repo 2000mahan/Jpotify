@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * @since 06/15/2019
  */
 public class Network {
-    private ArrayList<String> IPAddress;
+    private ArrayList<String> ipAddress;
     private PlayList sharedPlaylist;
     private User user;
 
@@ -26,12 +26,12 @@ public class Network {
         this.user = user;
     }
 
-    public ArrayList<String> getIPAddress() {
-        return IPAddress;
+    public ArrayList<String> getipAddress() {
+        return ipAddress;
     }
 
-    public void setIPAddress(ArrayList<String> IPAddress) {
-        this.IPAddress = IPAddress;
+    public void setIPAddress(ArrayList<String> ipAddress) {
+        this.ipAddress = ipAddress;
     }
 
     public PlayList getSharedPlaylist() {
@@ -41,22 +41,22 @@ public class Network {
     public void setSharedPlaylist(PlayList sharedPlaylist) {
         this.sharedPlaylist = sharedPlaylist;
     }
-    public void addIPaddress(String IPAddress){
-        this.IPAddress.add(IPAddress);
+    public void addipaddress(String ipAddress){
+        this.ipAddress.add(ipAddress);
     }
-    public void removeIPAddress(String IPAddress){
+    public void removeipAddress(String ipAddress){
 
-        this.IPAddress.remove(IPAddressIterator(IPAddress));
+        this.ipAddress.remove(ipAddressIterator(ipAddress));
 
     }
     /**
      * iterates through IPAddresses to find one that user is looking for
-     * @param IPAddress which is a string users option
+     * @param ipAddress which is a string users option
      */
-    private int IPAddressIterator(String IPAddress){
-        for(String certainIPAddress:this.IPAddress){
-            if(certainIPAddress.equals(IPAddress))
-               return  this.IPAddress.indexOf(certainIPAddress);
+    private int ipAddressIterator(String ipAddress){
+        for(String certainipAddress:this.ipAddress){
+            if(certainipAddress.equals(ipAddress))
+               return  this.ipAddress.indexOf(certainipAddress);
         }
         return 0;
     }

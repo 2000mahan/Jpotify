@@ -12,6 +12,7 @@ import java.awt.*;
 
 public class Center extends JPanel {
     public Center(){
+        setLayout(new BorderLayout());
         setBackground(new Color(169, 169, 169));
     }
 }

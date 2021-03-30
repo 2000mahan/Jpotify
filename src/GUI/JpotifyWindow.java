@@ -31,7 +31,9 @@ public class JpotifyWindow extends JFrame {
      * @throws UnsupportedTagException
      */
     public JpotifyWindow(JButton button) throws IOException, JavaLayerException, InvalidDataException, UnsupportedTagException {
-        super("Jpotify");
+        super();
+        ImageIcon img = new ImageIcon("Header.png");
+        setIconImage(img.getImage());
         Center center = new Center();
         Down down = new Down();
         Right right = new Right();

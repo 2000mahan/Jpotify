@@ -2,6 +2,7 @@ package GUI.Left;
 
 import GUI.Center.Center;
 import GUI.Down.Down;
+import Logic.Entity.Library.Library;
 import javazoom.jl.decoder.JavaLayerException;
 
 import javax.swing.*;
@@ -30,15 +31,16 @@ public class Left extends JPanel {
   public Left(Center center, Down down) throws FileNotFoundException, JavaLayerException {
     super();
     this.setLayout(new GridBagLayout());
+    Library lib = new Library();
     GridBagConstraints gbc = new GridBagConstraints();
     gbc.weightx = 0.1;
     gbc.weighty = 0.1;
     gbc.gridx = 0;
     gbc.gridy = 0;
-    this.add(icons = new Icons(center, down, this), gbc);
+    this.add(icons = new Icons(center, down, this, lib), gbc);
     gbc.gridx = 0;
     gbc.gridy = 1;
-    this.add(playLists = new PlayLists(), gbc);
+    this.add(playLists = new PlayLists(center, this, down, lib), gbc);
     gbc.gridx = 0;
     gbc.gridy = 2;
     this.add(artwork = new Artwork(), gbc);

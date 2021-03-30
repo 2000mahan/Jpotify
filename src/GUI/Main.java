@@ -20,8 +20,9 @@ import java.util.Scanner;
  */
 public class Main{
     public static void main(String[] args) throws IOException, JavaLayerException, InvalidDataException, UnsupportedTagException {
-        User user = new User("mahan");
-        JButton button = new JButton();
+        User user = new User("Mahan");
+        JButton button = new CustomButton("Connect...");
+        button.setFont(new Font("Serif", Font.PLAIN, 15));
         Scanner scan = new Scanner(System.in);
         String status = scan.nextLine();
         JpotifyWindow window = new JpotifyWindow(button);
@@ -30,7 +31,7 @@ public class Main{
             friendActivityButtonListener = new FriendActivityButtonListenerServer(user, window);
             button.addActionListener(friendActivityButtonListener);
         }
-        else {
+        else if(status.equals("client")){
             FriendActivityButtonListenerClient friendActivityButtonListener;
             friendActivityButtonListener = new FriendActivityButtonListenerClient(user, window);
             button.addActionListener(friendActivityButtonListener);
